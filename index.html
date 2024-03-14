@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="EN">
+    <head>
+        <title>Practice</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#t">click here to show <strong>PLACE</strong></a>
+            <a href="#t">click here to show <strong>PLACE</strong></a>
+            <a href="#t">click here to show <strong>PLACE</strong></a>
+        </nav>
+        <header>
+            <h1>Hello World</h1>
+                <hr>
+                    <p style="font-size:20px;">&lt;&lt;&lt;&copy; Hi Carlo&gt;&gt;&gt;</p>
+                    <!--LINK-->
+                    <p><em><a style="color:rgb(38, 0, 255);" href="https://www.w3schools.com/html/html_colors.asp">Dan Carlo Sy</a></em></p>
+                    <!--END LINK-->
+                <address style="font-size:20px;">
+                    this is the address 2021-2022
+                </address>
+        </header>   
+        <hr>
+        <!--LIST-->
+        <section>
+            <h3>this is heading</h3>
+            <ul>
+                <li><p>this is unordered list with p for spacing</p></li>
+                <li>this is unordered list</li>
+                <li>this is unordered list</li>
+            </ul> DOWNLOAD
+            <!--DOWNLOAD FILES-->
+            <ul>
+                <li>download this link <a href="icon.png" download>photo</a></li>
+            </ul>
+        </section>
+            <!--END DOWNLOAD FILES-->
+        <section id="t">
+            <h3>this is heading/ PLACE</h3>
+            <dl>
+                <dt>Carmona Cavite</dt>
+                    <dd>Yes <del>Sir</del></dd>
+                
+                <dt>Laguna</dt>
+                    <dd>Yes <sup>Mam</sup></dd>
+
+                <dt>Albay</dt>
+                 <dd>Mayon <sub>to</sub></dd>
+            </dl>
+         <hr>
+        </section>
+        <!--END LIST-->
+        <!--IMAGE-->
+        <figure>
+            <img src="images/pic1.jpg" alt="panda" width="300" height="168">
+            <img src="images/pic1.jpg" alt="panda" width="300" height="168">
+            <img src="images/pic1.jpg" alt="panda" width="300" height="168">
+            <img src="images/pic1.jpg" alt="panda" width="300" height="168">
+            <figcaption>this is panda</figcaption>
+        </figure>
+        <hr>
+        <!--END IMAGE-->
+        <!--SEMANTIC TAGS-->
+        <main style="color:red ;">
+            <p>this is the main content of the website</p>
+            <p>this is the main content of the website</p>
+        </main>
+        <details>
+            <summary><mark>INFORMATION</mark>OF DAN CARLO SY</summary>
+            <p>BSIT 2A/2001-00351</p>
+        </details>
+        <hr>
+        <!--END SEMANTIC TAGS-->
+        <!--TABLE-->
+        <table>
+            <caption>This is a CAPTION</caption>
+            <!--TABLE HEADER ONLY-->
+            <tr>
+                <th>&nbsp;</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>LOCATION</th>
+            </tr>
+            <!--END TABLE HEADER ONLY-->
+            <tr>
+                <th> this is header for row</th>
+                <td>Carlo</td>
+                <td>20</td>
+                <td>Cavite</td>
+            </tr>
+            <!--WITH COLSPAN-->
+            <tr>
+                <th> this is header for row</th>
+                <td colspan="2">THIS IS <em>COLSPAN 2</em></td>
+                <td>Carmona</td>
+            </tr>
+            <!--END WITH COLSPAN-->
+            <!--WITH ROWSPAN-->
+            <tr>
+                <th rowspan="2"> this is header for row</th>
+                <td rowspan="2">THIS IS <em>ROWSPAN 2</em></td>
+                <td>Cavite</td>
+                <td>Laguna</td>
+            </tr>
+            <tr>
+                <td>Ilocos</td>
+                <td>Albay</td>
+            </tr>
+            <tr>
+                <th rowspan="2"> this is header for row</th>
+                <td rowspan="2" colspan="2" >THIS IS ROWSPAN 2 WITH COLSPAN 2</td>
+                <td> Dan</td>
+            </tr>
+            <tr>
+                <td>Burger</td>
+            </tr>
+            <!--END WITH ROWSPAN-->
+        </table>
+        <!--END TABLE-->
+        <hr>
+        <!--FORM-->
+        <form action="https://httpbin.org/get" method="get">
+            <!--TEXT TYPE-->
+            <fieldset style="width:10%;">
+                    <legend>Personal Information</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="this is TEXT" autocomplete="on"
+                    required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="this is TEXT" autocomplete="on"
+                    required>   
+                </p>
+                <p>
+                    <label for="Password">Password:</label>
+                    <input type="password" name="Password" id="Password" placeholder="this is PASSWORD" required>
+                </p>
+             <!--END TEXT TYPE-->
+             <!--NUMBER TYPE-->
+                <p>
+                    <label for="Year">Birth Year:</label>
+                    <input style="width:150px;" type="number" name="Year" id="Year" placeholder="2000" min="2000" max="2022" step="1" required>
+                </p>
+             <!--SELECT OPTION-->
+                <p>
+                    <label for="choices">Place:</label>
+                    <select name="Place" id="choices">
+                        <option value="Carmona">Carmona</option>
+                        <option value="Albay">Albay</option>
+                        <option value="Ilocos">Ilocos</option>
+                    </select>
+                </p>
+             <!--END SELECT OPTION-->
+             <!--END NUMBER TYPE-->
+            </fieldset>
+            <br>
+            <!--RADIO BUTTON-->
+            <fieldset style="width:10%;">
+                <legend>Menu of the Restaurant</legend>
+                <p>
+                    <input type="radio" name="food" id="adobo" value="adobo">
+                    <label for="adobo">Adobo</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="sinigang" value="sinigang">
+                    <label for="sinigang">Sinigang</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="sisig" value="sisig">
+                    <label for="sisig">Sisig</label>
+                </p>
+            </fieldset>
+            <!--END RADIO BUTTON-->
+            <br>
+            <!--CHECKBOX BUTTON-->
+            <fieldset style="width:10%;">
+                <legend>Favorite Things</legend>
+                <p>
+                    <input type="checkbox" name="things" id="ball" value="ball">
+                    <label for="ball">Ball</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="things" id="pen" value="pen">
+                    <label for="pen">Pen</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="things" id="speaker" value="speaker">
+                    <label for="speaker">Speaker</label>
+                </p>
+            </fieldset>
+            <!--END CHECKBOX BUTTON-->
+            <br>
+            <!--TEXTAREA-->
+            <fieldset style="width:10%;">
+                <legend>Your Email</legend>
+                <p>
+                    <label for="email">Send me an Email</label>
+                    <textarea name="email" id="email" cols="30" rows="10" placeholder="Type your Email here:"></textarea>
+                </p>
+            </fieldset>
+            <!--END TEXTAREA-->
+            <br>
+            <!--BUTTONS-->
+            <button type="submit">Submit Information</button>
+            <button type="reset">Reset Information</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post Information</button>
+        </form>
+        <!--END FORM-->
+    </body>
+</html>
